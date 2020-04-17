@@ -2,11 +2,12 @@
 
 namespace Racquetball_Game_Simulator
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var t = new Game(.50, .50);
+            t.PlayGame(true, "Ryan", "Preston");
         }
     }
 }
