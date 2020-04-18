@@ -19,7 +19,7 @@ namespace Racquetball_Game_Simulator
             _p2Prob = p2Prob;
         }
 
-        public void PlayGame(bool watchGame, string n1, string n2)
+        public void Play(bool watchGame, string n1, string n2)
         {
             var rng = new Random();
             var p1Size = (int) (_p1Prob * 100);
@@ -73,5 +73,8 @@ namespace Racquetball_Game_Simulator
                 }
             }
         }
+
+        public bool GetShutout() { return _shutout; }
+        public int GetWinner() { return _winner; }
     }
 }
